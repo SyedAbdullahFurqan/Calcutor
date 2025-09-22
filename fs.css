@@ -1,0 +1,211 @@
+#sa {
+
+
+    color: blue;
+}
+
+*{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    align-items: center;
+    width: 43px;
+    height: 41px;
+    margin: 7px 14px;
+    color: #fff7e7;
+    text-align: center;
+    background-color: #ff1a1a;
+    justify-content: cc;
+    box-shadow: 0px 1px 11px 4px;
+    border-radius: 45px;
+}
+button:hover{
+    color: #ff1a1a;
+    background-color: white;
+}
+eqaul {
+    color: currentColor;
+    background-color: cyan;
+}
+.opera{
+    font-size: 20px;
+
+    background-color: darkcyan;
+    color: honeydew;
+
+}
+.calculator{
+   border: 2px solid gray;
+   
+background-color:chartreuse;
+    display: flex;
+justify-content: center;
+border-radius: 20px;
+align-items: center;
+width: 500px;
+margin-left: 400px;
+padding: 20px;
+flex-direction: column;
+}
+
+
+input#box {
+    padding: 16px 12px;
+    width: 232px;
+    background-color: tomato;
+    border-radius: 22px;
+    box-shadow: inset 0px -1px 4px 0px #6c4848;
+    margin: 19px;
+    font-size: 25px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid-container {
+
+    background-color: red;
+}
+
+
+
+
+.grid {
+    background-color: rgb(183, 0, 255);
+    height: 100px;
+    width: 200px;
+    color: black;
+
+}
+
+
+
+
+
+
+.cont p {
+
+    color: red;
+
+}
+
+
+
+
+
+.box4 {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    transition: all 1s ease-in;
+
+
+}
+
+.furqan{
+    background-color: tomato;
+    color: rgb(17, 239, 43);
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+
+
+
+
+.box4:hover {
+
+    background-color: peru;
+
+    transform: rotate(180deg);
+
+    border-radius: 50%;
+}
+
+
+
+.box3 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid gray;
+    display: flex;
+    margin-left: 400px;
+    
+animation: sad 2s linear 4 ;
+border-radius: 50%;
+}
+
+.cc1 {
+    width: 100px;
+    background-color: aliceblue;
+    height: 100px;
+      /*
+    animation-name:fur ;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    */
+    border-radius: 60%;
+}
+
+.sa{
+    color: aliceblue;
+}
+
+
+@keyframes sad {
+    from{
+transform: rotate(0);
+    }
+ to{
+    transform: rotate(360deg);
+
+
+ }
+}
+
+
+
+
+@keyframes fur {
+
+
+    0%,100% {
+        transform: translate(0, 0);
+
+    }
+
+    25% {
+        transform: translate(200px, 0);
+
+    }
+
+    51% {
+        transform: translate(200px,200px);
+
+    }
+    
+    75% {
+        transform: translate(0,200px);
+
+    }
+}
