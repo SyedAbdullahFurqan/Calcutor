@@ -241,6 +241,7 @@ console.log(store)
 store.forEach(e => {
     console.log(e)
 e.addEventListener('click',(f)=>{
+      let value = f.target.innerHTML;
 if(f.target.innerHTML==='del'){
 
 string=string.substring(0,string.length-1)
@@ -254,7 +255,17 @@ input.value = string;
 string=eval(string)
 input.value=string
 }
+ else if (['+', '-', '*', '/', '%'].includes(value)) {
+      // Prevent operator as first input
+      if (string === '') return;
 
+      // Prevent two operators in a row
+      let lastChar = string[string.length - 1];
+      if (['+', '-', '*', '/', '%'].includes(lastChar)) return;
+
+      string += value;
+      input.value = string;
+    }
 else{
 
 string+= f.target.innerHTML;

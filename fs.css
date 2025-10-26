@@ -43,12 +43,14 @@ eqaul {
    
 background-color:chartreuse;
     display: flex;
-justify-content: center;
+justify-items: center;
 border-radius: 20px;
-align-items: center;
-width: 500px;
-margin-left: 400px;
-padding: 20px;
+align-items: center; 
+margin: auto;
+justify-content: center;
+width: 60%;
+
+padding:10px;
 flex-direction: column;
 }
 
@@ -122,6 +124,7 @@ input#box {
     background-color: tomato;
     color: rgb(17, 239, 43);
     font-size: 40px;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
     text-transform: capitalize;
@@ -171,41 +174,3 @@ border-radius: 50%;
     color: aliceblue;
 }
 
-
-@keyframes sad {
-    from{
-transform: rotate(0);
-    }
- to{
-    transform: rotate(360deg);
-
-
- }
-}
-
-
-
-
-@keyframes fur {
-
-
-    0%,100% {
-        transform: translate(0, 0);
-
-    }
-
-    25% {
-        transform: translate(200px, 0);
-
-    }
-
-    51% {
-        transform: translate(200px,200px);
-
-    }
-    
-    75% {
-        transform: translate(0,200px);
-
-    }
-}
